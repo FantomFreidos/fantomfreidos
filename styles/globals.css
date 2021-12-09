@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=VT323&display=swap");
+
+.hero {
+  background-image: url("/assets/images/bg.svg");
+}
+
+@media (max-width: 640px) {
+  .hero {
+    background-image: url("/assets/images/bg-mob.png");
+  }
+}
+
+@font-face {
+  font-family: "whackyjoe";
+  src: url("/assets/fonts/whackyjoe.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-shadow {
+  text-shadow: 8px 1px 1px #306082;
+}
