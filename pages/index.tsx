@@ -107,7 +107,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" min-h-screen flex flex-col items-center justify-center relative">
+      <main className=" min-h-screen flex flex-col items-center justify-center relative max-w-screen-xl">
         <Nav />
         <Hero />
         <Mint />

@@ -3,7 +3,7 @@ import React from "react";
 function Lore() {
   return (
     <div className="flex items-center flex-col  px-8" id="lore">
-      <span className="text-4xl lg:text-5xl text-fg font-whacky uppercase my-20">
+      <span className="text-4xl lg:text-5xl text-fg font-whacky uppercase mb-20">
         Lore
       </span>
       <div className="flex flex-col lg:flex-row-reverse items-center justify-center">
