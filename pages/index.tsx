@@ -27,6 +27,7 @@ import Lore from "../components/pages/home/Lore";
 import Faq from "../components/pages/home/Faq";
 import Attributes from "../components/pages/home/Attributes";
 import PopupBody from "../components/pages/home/PopupBody";
+import Nav from "../components/Nav";
 
 declare let window: any;
 
@@ -101,12 +102,13 @@ const Home: NextPage = () => {
   return (
     <div className="font-vt323 bg-bg items-center justify-center flex overflow-x-hidden">
       <Head>
-        <title>Friedo</title>
+        <title>Fantom Freido</title>
         <meta name="description" content="Welcome to the Friedoverse" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=" min-h-screen flex flex-col items-center justify-center max-w-screen-xl">
+      <main className=" min-h-screen flex flex-col items-center justify-center relative">
+        <Nav />
         <Hero />
         <Mint />
         <Attributes />

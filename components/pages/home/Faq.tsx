@@ -53,7 +53,10 @@ function FaqCard({ q, a }: { q: string; a: string }) {
 
 function Faq() {
   return (
-    <div className=" flex flex-col items-center py-16 px-4 select-none w-full">
+    <div
+      className=" flex flex-col items-center py-16 px-4 select-none w-full"
+      id="faq"
+    >
       <span className="text-4xl lg:text-5xl text-fg font-whacky uppercase my-20">
         Faq
       </span>
