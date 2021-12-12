@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const faqData = [
   {
     q: "What is this project about?",
-    a: "The Fantom Freido Club is about NFTs, stories and most importantly, community. Freido is a semi-generative NFT that gives its holders regular airdropped comics, lotteries for ultra rare 1/1 NFTs and the chance to write the main story for the FreidoVerse. 2,222 Freido will be discovered on the 14th when the portal opens for all...",
+    a: "The Fantom Freido Club is about NFTs, stories and most importantly, community. Freido is a semi-generative NFT that gives its holders regular airdropped comics, lotteries for ultra rare 1/1 NFTs and the chance to write the main story for the FreidoVerse. 2,222 Freidos will be discovered on the 14th when the portal opens for all...",
   },
   {
     q: "Community Fund???",
@@ -11,7 +11,7 @@ const faqData = [
   },
   {
     q: "When mint?",
-    a: "TFreido is touching down on the 14th of December!.",
+    a: "Freido is touching down on the 14th of December!.",
   },
   {
     q: "What is the Cost and total supply?",
