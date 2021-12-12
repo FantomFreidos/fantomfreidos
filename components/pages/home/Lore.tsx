@@ -10,7 +10,7 @@ function Lore() {
         <div className="flex-1 ">
           <img
             className=" w-full "
-            src="/assets/images/Friedo/Freido_rand6.png"
+            src="/assets/images/friedo/Freido_rand6.png"
             alt=""
           />
         </div>
