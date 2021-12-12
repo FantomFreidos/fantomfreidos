@@ -31,13 +31,16 @@ function Attributes() {
       </div>
 
       <div className="flex-1 flex flex-col items-start justify-center ">
-        <span className="text-4xl lg:text-5xl text-fg font-whacky uppercase mb-20">
+        <span className=" flex  w-full text-2xl justify-center lg:justify-start text-center lg:text-left lg:text-4xl text-fg font-whacky uppercase my-12 lg:mb-20">
           Attributes
         </span>
         <span className="text-gray-200 text-lg lg:text-2xl text-center lg:text-left">
-          Freido is hand crafted and all attributes have been carefully thought
-          out. with over 70 unique attributes there are thousands of possible
-          Friedo’s to find.
+          Freido has an almost limitless amount of combinations to be found all
+          over the Freidoverse. With over 70 unique attributes no two Fredios
+          are alike. Each attribute has been meticulously hand crafted to create
+          the coolest frogs on the Fantom blockchain. There are some ultra rare
+          Freido attributes from blinged out grills to dark and light sparkle
+          skinned froggies!.
         </span>
       </div>
     </div>

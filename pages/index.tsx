@@ -111,9 +111,9 @@ const Home: NextPage = () => {
         <Nav />
         <Hero />
         <Mint />
+        <Lore />
         <Attributes />
         <Roadmap />
-        <Lore />
         <Faq />
         <Footer />
         <Popup>

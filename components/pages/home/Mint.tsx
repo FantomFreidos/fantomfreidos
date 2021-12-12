@@ -79,31 +79,42 @@ function Mint() {
 
   return (
     <div
-      className="flex font-halloweek flex-col relative items-center  w-full py-16 "
+      className="flex justify-center flex-col relative items-center  w-full py-16 "
       id="mint"
     >
-      <div className="flex items-center">
-        <span
-          className="font-whacky text-fg text-2xl cursor-pointer select-none hover:text-gray-300 hover:scale-125 transform"
-          onClick={decrement}
-        >
-          -
-        </span>
-        <span className="text-7xl font-vt323 text-gray-300 px-8">
+      <div className="flex items-center justify-center ">
+        <div className="flex items-center justify-center  text-8xl text-center font-bold text-fg w-32">
           {buyAmount}
-        </span>
-        <span
-          className="font-whacky text-fg text-2xl cursor-pointer select-none hover:text-gray-300 hover:scale-125 transform"
-          onClick={increment}
-        >
-          +
+        </div>
+
+        <div className="flex flex-col space-y-2">
+          <div
+            className="w-10 h-10  text-bg select-none bg-fg hover:text-white hover:bg-gray-700 text-4xl flex items-center justify-center mb-2 font-bold p-2 rounded-lg cursor-pointer"
+            onClick={() => increment()}
+          >
+            +
+          </div>
+          <div
+            className="w-10 h-10 text-bg select-none bg-fg hover:text-white hover:bg-gray-700 text-4xl flex items-center justify-center font-bold p-2 rounded-lg cursor-pointer"
+            onClick={() => decrement()}
+          >
+            -
+          </div>
+        </div>
+      </div>
+
+      {/* Mint Button */}
+      <div
+        className="flex items-center justify-center bg-hallow rounded-md py-2 mt-8 px-12 cursor-pointer"
+        onClick={handleMint}
+      >
+        <span className="text-xl text-bg bg-fg flex items-center justify-center hover:text-white hover:bg-gray-700 font-whacky uppercase px-20 py-2 rounded-sm">
+          Mint
         </span>
       </div>
-      <div className="text-white text-4xl px-6 py-2 border-2 mt-12 border-white rounded-md cursor-pointer hover:bg-gray-800 select-none">
-        MINT
-      </div>
+
       <span className="text-6xl lg:text-7xl font-vt323 text-gray-300 py-8 px-8">
-        0/1111
+        0/2222
       </span>
     </div>
   );
