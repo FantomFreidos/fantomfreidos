@@ -6,26 +6,10 @@ function Attributes() {
     >
       <div className="flex-1 flex items-center justify-center lg:p-8 mb-8">
         <div className="grid grid-cols-2 gap-2 ">
-          <img
-            className=""
-            src="/assets/images/friedo/Freido_rand5.png"
-            alt=""
-          />
-          <img
-            className=""
-            src="/assets/images/friedo/Freido_rand2.png"
-            alt=""
-          />
-          <img
-            className=""
-            src="/assets/images/friedo/Freido_rand3.png"
-            alt=""
-          />
-          <img
-            className=""
-            src="/assets/images/friedo/Freido_rand4.png"
-            alt=""
-          />
+          <img className="" src="/assets/images/friedo/f1.jpg" alt="" />
+          <img className="" src="/assets/images/friedo/f2.jpg" alt="" />
+          <img className="" src="/assets/images/friedo/f3.jpg" alt="" />
+          <img className="" src="/assets/images/friedo/f4.jpg" alt="" />
         </div>
         {/* <img src="/assets/images/friedos.png" alt="" /> */}
       </div>

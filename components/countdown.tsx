@@ -60,7 +60,7 @@ function CountdownTimer() {
                 {minutes > 9 ? minutes : "0" + minutes}
               </span>
               <span className="text-sm lg:text-xl mt-4 text-fg text-shadow  uppercase">
-                Minutes
+                Mins
               </span>
             </div>
             <div className="flex flex-col items-center justify-center">
