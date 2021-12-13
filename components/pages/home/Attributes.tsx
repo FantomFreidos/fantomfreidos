@@ -1,7 +1,7 @@
 function Attributes() {
   return (
     <div
-      className="flex items-center justify-center w-full flex-col lg:flex-row py-8 px-8 "
+      className="flex items-center justify-center w-full flex-col lg:flex-row py-8 px-8 sc-pd"
       id="attributes"
     >
       <div className="flex-1 flex items-center justify-center lg:p-8 mb-8">

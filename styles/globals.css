@@ -20,3 +20,10 @@
 .text-shadow {
   text-shadow: 8px 1px 1px #306082;
 }
+
+.sc-pd {
+  scroll-margin-top: 48px;
+}
+.sc-pdl {
+  scroll-margin-top: 88px;
+}

@@ -79,7 +79,7 @@ function Mint() {
 
   return (
     <div
-      className="flex justify-center flex-col relative items-center  w-full py-16 "
+      className="flex justify-center flex-col relative items-center  w-full py-16 sc-pd "
       id="mint"
     >
       <h1 className="text-xl lg:text-4xl text-center font-whacky text-fg mb-12">

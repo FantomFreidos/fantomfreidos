@@ -2,7 +2,7 @@ import React from "react";
 
 function Lore() {
   return (
-    <div className="flex items-center flex-col  px-8" id="lore">
+    <div className="flex items-center flex-col  px-8 sc-pdl " id="lore">
       <span className="text-3xl lg:text-4xl text-fg font-whacky uppercase mb-20">
         Lore
       </span>
