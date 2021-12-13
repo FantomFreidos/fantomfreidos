@@ -27,6 +27,7 @@ function Mint() {
   };
 
   async function handleMint() {
+    return;
     const popupState: Popup = {
       isLoading: true,
       isError: false,
@@ -116,8 +117,8 @@ function Mint() {
           className="flex items-center justify-center bg-hallow rounded-md py-2 mt-2 px-12 cursor-pointer"
           onClick={handleMint}
         >
-          <span className="text-xl text-bg bg-fg flex items-center justify-center hover:text-white hover:bg-gray-700 font-whacky uppercase px-20 py-2 rounded-sm">
-            Mint
+          <span className="text-lg text-bg bg-fg flex items-center justify-center hover:text-white hover:bg-gray-700 font-whacky uppercase px-20 py-2 rounded-sm">
+            Inactive
           </span>
         </div>
 
