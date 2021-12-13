@@ -14,7 +14,7 @@ function Lore() {
           <span className="text-fg  text-sm lg:text-xl font-whacky mb-8">
             The first community driven storytelling experience on Fantom
           </span>
-          <span className="flex-1 text-gray-200 lg:pr-24 text-lg ">
+          <span className="flex-1 text-gray-200 lg:pr-24 text-lg lg:text-2xl">
             We’ve created the Stake to Storytelling mechanism around the idea of
             a community driven Freido multiverse. Not to be confused with a
             MetaVerse, the multiverse means that all NFTs are different versions

@@ -15,7 +15,7 @@ function Attributes() {
       </div>
 
       <div className="flex-1 flex flex-col items-start justify-center ">
-        <span className=" flex  w-full text-2xl justify-center lg:justify-start text-center lg:text-left lg:text-4xl text-fg font-whacky uppercase my-12 lg:mb-20">
+        <span className=" flex  w-full text-sm lg:text-xl justify-center lg:justify-start text-center lg:text-left  text-fg font-whacky uppercase my-12 lg:mb-8">
           Attributes
         </span>
         <span className="text-gray-200 text-lg lg:text-2xl text-center lg:text-left">
