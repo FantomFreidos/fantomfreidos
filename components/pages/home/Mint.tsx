@@ -85,44 +85,46 @@ function Mint() {
       <h1 className="text-xl lg:text-4xl text-center font-whacky text-fg mb-12">
         Mint a Freido
       </h1>
-      <div className="flex items-center justify-center ">
-        <div className="flex items-center justify-center  text-5xl text-center font-bold font-whacky text-fg w-32">
-          {buyAmount}
+      <div className="flex flex-col items-center justify-center bg-gray-400/20 lg:px-8 rounded-xl border border-white/20 py-8 px-4 ">
+        <div className="flex items-center justify-center ">
+          <div className="flex items-center justify-center  text-8xl text-center font-bold text-fg w-32">
+            {buyAmount}
+          </div>
+
+          <div className="flex flex-col space-y-2 font-whacky text-lg">
+            <div
+              className="w-10 h-10  text-bg select-none bg-fg hover:text-white hover:bg-gray-700  flex items-center justify-center mb-2 font-bold p-2 rounded-lg cursor-pointer"
+              onClick={() => increment()}
+            >
+              +
+            </div>
+            <div
+              className="w-10 h-10 text-bg select-none bg-fg hover:text-white hover:bg-gray-700  flex items-center justify-center font-bold p-2 rounded-lg cursor-pointer"
+              onClick={() => decrement()}
+            >
+              -
+            </div>
+          </div>
+        </div>
+        <div className="text-lg mt-8 text-fg font-whacky">
+          <span className="">You Pay: </span>
+          <span>{buyAmount * 33} FTM</span>
         </div>
 
-        <div className="flex flex-col space-y-2 font-whacky text-lg">
-          <div
-            className="w-10 h-10  text-bg select-none bg-fg hover:text-white hover:bg-gray-700  flex items-center justify-center mb-2 font-bold p-2 rounded-lg cursor-pointer"
-            onClick={() => increment()}
-          >
-            +
-          </div>
-          <div
-            className="w-10 h-10 text-bg select-none bg-fg hover:text-white hover:bg-gray-700  flex items-center justify-center font-bold p-2 rounded-lg cursor-pointer"
-            onClick={() => decrement()}
-          >
-            -
-          </div>
+        {/* Mint Button */}
+        <div
+          className="flex items-center justify-center bg-hallow rounded-md py-2 mt-2 px-12 cursor-pointer"
+          onClick={handleMint}
+        >
+          <span className="text-xl text-bg bg-fg flex items-center justify-center hover:text-white hover:bg-gray-700 font-whacky uppercase px-20 py-2 rounded-sm">
+            Mint
+          </span>
         </div>
-      </div>
-      <div className="text-lg mt-8 text-fg font-whacky">
-        <span className="">You Pay: </span>
-        <span>{buyAmount * 33} FTM</span>
-      </div>
 
-      {/* Mint Button */}
-      <div
-        className="flex items-center justify-center bg-hallow rounded-md py-2 mt-2 px-12 cursor-pointer"
-        onClick={handleMint}
-      >
-        <span className="text-xl text-bg bg-fg flex items-center justify-center hover:text-white hover:bg-gray-700 font-whacky uppercase px-20 py-2 rounded-sm">
-          Mint
+        <span className="text-xl lg:text-3xl font-whacky text-fg py-8 px-8">
+          0/2222
         </span>
       </div>
-
-      <span className="text-xl lg:text-3xl font-whacky text-fg py-8 px-8">
-        0/2222
-      </span>
     </div>
   );
 }
