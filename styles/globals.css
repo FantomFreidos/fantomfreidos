@@ -12,7 +12,8 @@
 
 @font-face {
   font-family: "whackyjoe";
-  src: url("/assets/fonts/whackyjoe.ttf") format("truetype");
+  src: url("/assets/fonts/whackyjoe.woff") format("woff"),
+    url("/assets/fonts/whackyjoe.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
