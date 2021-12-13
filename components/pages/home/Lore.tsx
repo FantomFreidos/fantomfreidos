@@ -8,11 +8,7 @@ function Lore() {
       </span>
       <div className="flex flex-col lg:flex-row-reverse items-center justify-center">
         <div className="flex-1 ">
-          <img
-            className=" w-full "
-            src="/assets/images/friedo/freido.gif"
-            alt=""
-          />
+          <img className=" w-full " src="/assets/images/freido.gif" alt="" />
         </div>
         <div className="flex flex-col flex-[2] items-start mt-8 text-center lg:text-left justify-center lg:mr-12">
           <span className="text-fg  text-sm lg:text-xl font-whacky mb-8">
