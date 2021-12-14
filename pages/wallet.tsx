@@ -83,7 +83,7 @@ const Wallet: NextPage = () => {
       <div className=" bg-bg items-center justify-center flex max-w-[100vw] ">
         <Head>
           <title>Freidos Owned </title>
-          <meta name="description" content="View all your Dolphinos" />
+          <meta name="description" content="View all your Freidos" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
