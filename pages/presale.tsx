@@ -49,7 +49,7 @@ const Presale: NextPage = () => {
   const { contextState, setContextState } = useContext(AppContext);
 
   function increment() {
-    if (buyAmount < 3) {
+    if (buyAmount < 2) {
       setBuyAmount(buyAmount + 1);
     }
   }

@@ -40,7 +40,7 @@ function Nav() {
             </div>
           </Link>
           <Link href="/presale">
-            <div className="text-gray-600 hover:text-gray-800 cursor-pointer">
+            <div className="text-red-500 hover:text-red-800 cursor-pointer">
               Presale
             </div>
           </Link>
