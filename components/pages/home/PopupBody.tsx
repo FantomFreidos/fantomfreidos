@@ -29,25 +29,20 @@ function PopupBody() {
     });
   }
   return (
-    <div className=" flex rounded-2xl flex-col items-center justify-evenly text-spooky text-xl py-12 px-4 space-y-4 w-full max-w-xl bg-hallow font-halloweek">
+    <div className=" flex rounded-2xl flex-col items-center justify-evenly text-spooky text-xl py-12 px-4 space-y-4 w-full max-w-xl bg-white/80 font-halloweek">
       <div className=" flex flex-col items-center justify-center">
         {contextState.popupState.isLoading && (
           <div className="flex items-center justify-center flex-col">
-            <img
-              src="/assets/images/loading.png"
-              className="w-40 h-40 mb-8 animate-bounce"
-              alt=""
-            />
             <span className="text-3xl font-bold text-spooky">
-              Minting Lanterns...
+              Scanning Freidos...
             </span>
           </div>
         )}
         {contextState.popupState.isError && (
           <div className="flex items-center justify-center flex-col">
             <img src="/assets/images/error.png" alt="" />
-            <span className="text-4xl text-red-900 mb-6">ERROR</span>
-            <span className="text-lg font-bold text-beige text-center">
+            <span className="text-4xl text-red-600 mb-6">ERROR</span>
+            <span className="text-2xl font-bold text-black text-center capitalize">
               {contextState.popupState.message}
             </span>
           </div>
@@ -55,11 +50,10 @@ function PopupBody() {
         {!contextState.popupState.isLoading &&
           !contextState.popupState.isError && (
             <div className="flex items-center justify-center flex-col">
-              <img src="/assets/images/success.png" alt="" />
-              <span className="text-4xl font-bold text-spooky text-center">
-                Mint Succesfull
+              <span className="text-4xl font-bold text-green-600 text-center">
+                Scan Succesfull
               </span>
-              <div className="flex text-beige mt-4 hover:text-gray-600">
+              <div className="flex text-green-400 mt-4 hover:text-gray-600">
                 <a
                   href={hashToLink(contextState.popupState.txHash)}
                   target="_blank"
@@ -88,7 +82,7 @@ function PopupBody() {
       <div className="flex">
         {
           <div
-            className="rounded  bg-spooky text-hallow leading-3 text-center px-6 py-4 font-bold cursor-pointer"
+            className="rounded  bg-bg text-fg leading-3 text-center px-6 py-4 font-bold cursor-pointer"
             onClick={() => togglePop()}
           >
             Close

@@ -67,32 +67,28 @@ const Home: NextPage = () => {
 
     const addr = await provider.send("eth_requestAccounts", []);
     let signer = provider.getSigner();
-    // const frideoContract = new ethers.Contract(
-    //   FRIEDO_ADDRESS,
-    //   FRIEDO_ABI,
-    //   provider
-    // );
-    // const frideoContractSigner = new ethers.Contract(
-    //   FRIEDO_ADDRESS,
-    //   FRIEDO_ABI,
-    //   signer
-    // );
+    const frideoContract = new ethers.Contract(
+      FRIEDO_ADDRESS,
+      FRIEDO_ABI,
+      provider
+    );
+    const frideoContractSigner = new ethers.Contract(
+      FRIEDO_ADDRESS,
+      FRIEDO_ABI,
+      signer
+    );
 
-    // const price = await getPrice(frideoContract);
-    // const currentSupply = await getSupply(frideoContract);
-    // const isPaused = await saleStatus(frideoContract);
+    const price = await getPrice(frideoContract);
+    const currentSupply = await getSupply(frideoContract);
+
     // let saleStats = isPaused ? 0 : 1;
-    // if (currentSupply == 4444) {
-    //   saleStats = 3;
-    // }
+
     setContextState({
       ...contextState,
-      // price,
-      // currentSupply,
-      // isPaused,
-      // saleStats,
-      // frideoContract,
-      // frideoContractSigner,
+      price,
+      currentSupply,
+      frideoContract,
+      frideoContractSigner,
       addr: addr[0],
       isLoading: false,
       isConnected: true,

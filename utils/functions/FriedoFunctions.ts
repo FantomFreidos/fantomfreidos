@@ -15,8 +15,14 @@ export const saleStatus = async function (contract: any) {
   return isPaused;
 };
 
+export const freeMintBal = async function (contract: any, addr: string) {
+  const hasfree = await contract.freeMintBalance(addr);
+  const bal = BigNumber.from(hasfree).toNumber();
+  return bal == 1 ? true : false;
+};
+
 export const getOwnedIDs = async function (contract: any, addr: string) {
-  let ids = await contract.lanternsOwned(addr);
+  let ids = await contract.freidosOwned(addr);
   const ownedIds = ids.map((id: any) => BigNumber.from(id).toNumber());
   return ownedIds;
 };
@@ -30,8 +36,29 @@ export const buyFriedo = async function (
   let overrides = {
     value: ethers.utils.parseEther(totalPrice),
   };
-  let transaction = await contract.buyFriedo(amount, overrides);
+  let transaction = await contract.buyFreido(amount, overrides);
   let tx = await transaction.wait();
 
+  return tx.transactionHash;
+};
+
+export const buyWhitelistFriedo = async function (
+  contract: any,
+  price: any,
+  amount: any
+) {
+  const totalPrice = (price * amount).toString();
+  let overrides = {
+    value: ethers.utils.parseEther(totalPrice),
+  };
+  let transaction = await contract.buyWhitelistedFreido(amount, overrides);
+  let tx = await transaction.wait();
+
+  return tx.transactionHash;
+};
+
+export const freeMint = async function (contract: any) {
+  let transaction = await contract.freeMint();
+  let tx = await transaction.wait();
   return tx.transactionHash;
 };
