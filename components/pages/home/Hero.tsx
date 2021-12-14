@@ -9,7 +9,7 @@ function Hero() {
       </div>
       <div className="flex flex-col items-center bg-gray-800/40 lg:px-8 rounded-xl border border-white/20">
         <span className="text-xl text-shadow lg:text-2xl text-center text-fg font-whacky  my-8">
-          Portal Opening in
+          The Portal Has Opened
         </span>
         <CountdownTimer />
       </div>
